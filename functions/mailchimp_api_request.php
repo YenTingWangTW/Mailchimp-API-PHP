@@ -37,8 +37,8 @@ function mailchimp_api_request($api_key, $type, $target, $timeout = 10, $data = 
                                                                                                                    
 	// encode json to data if any
 	if ($data){
-			$json = json_encode($data);
-			curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
+		$json = json_encode($data);
+		curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
 	}
 
 	// store the result after curl execution
